@@ -20,10 +20,14 @@ nav li{
     margin-left: 2em;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: mediumblue;
     }
+
+a{
+    text-decoration: none;
+}
 
 .Intro p{
     margin-top: 0;
@@ -229,7 +233,7 @@ row-gap: 25px;
     row-gap: 25px;
 }
 
-.activities article{
+.activities a{
     padding: 1px;
     background-color: white;
     box-shadow: 0 0 15px rgb(167, 161, 161);
@@ -260,42 +264,42 @@ row-gap: 25px;
     margin-left: 6px;
 }
 
-.port{
+#port{
     grid-row: 2/7;
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
 }
 
-.pomegues{
+#pomegues{
     grid-row: 2/5;
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
 }
 
-.calanques{
+#calanques{
     grid-row: 2/7;
     grid-column: 3/4;
     display: flex;
     flex-direction: column;
 }
 
-.dame{
+#dame{
     grid-column: 4/5;
     grid-row: 2/4;
     display: flex;
     flex-direction: column;
 }
 
-.frioul{
+#frioul{
     grid-column: 2/3;
     grid-row: 5/7;
     display: flex;
     flex-direction: column;
 }
 
-.longchamp{
+#longchamp{
 grid-column: 4/5;
 grid-row: 4/7;
 display: flex;

@@ -76,7 +76,10 @@ margin-bottom: -17px;
     margin: -2px;
     color: #0065FC;
     margin-right: 1rem;
+}
 
+.filters div:hover{
+    background-color: #8897ac;
 }
 
 .info{

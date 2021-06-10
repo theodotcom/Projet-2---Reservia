@@ -1,39 +1,48 @@
-body{
+html {
     font-family: raleway;
-    margin-left: 15px;
-    margin-right: 15px;
 }
+
+.container {
+    margin: 1em;
+}
+
+
 
 /*Intro */
 
 .navigation {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: center;
   }
-  .navigation > *:not(.main-nav) {
-    padding: 1em 20px;
-  }
-  .navigation .navbar {
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation .navbar {
     display: flex;
     width: 100%;
-    order: 1;
+    justify-content: flex-end;
   }
-  .navigation .navbar a {
+
+.navigation .navbar a {
     text-align: center;
-    width: 50vw;
     padding: 1em;
     color: black;
-    border-bottom: 3px solid var(--alt-clr);
+    border-top: 3px solid var(--alt-clr);
     transition: border 0.5s ease;
   }
-  .navigation .navbar a:hover {
+.navigation .navbar a:hover {
     font-weight: 600;
     color: var(--clr);
-    border-bottom: 3px solid var(--clr);
+    border-top: 3px solid var(--clr);
   }
-  .navigation a#signing {
+
+  
+
+.navigation a#signing {
     color: var(--clr);
     font-weight: bold;
   }
@@ -333,14 +342,15 @@ flex-direction: column;
 
 footer{
     display: flex;
-    flex-direction:row ;
+   flex-flow: row wrap;
     justify-content: space-around;
     background-color: #f2f2f2;
     margin-top: 26px;
 }
 
 footer div{
-    padding: 23px;
+    display: block;
+    padding: 2em;
 }
 
 
@@ -352,11 +362,35 @@ footer div{
         margin: 0px;
     }
 
-    .navigation .navbar {
+    .navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navigation .navbar {
         display: flex;
         width: 100%;
         order: 1;
       }
+      .navigation .navbar a {
+        text-align: center;
+        width: 50vw;
+        color: black;
+        transition: border 0.5s ease;
+      }
+      .navigation .navbar a:hover {
+        font-weight: 600;
+        color: var(--clr);
+       
+      }
+      .navigation a#igning {
+        color: var(--clr);
+        font-weight: bold;
+      }
+    
+
     #banner{
         margin: 7px;
     }

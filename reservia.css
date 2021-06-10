@@ -172,7 +172,6 @@ figure{
 .popular{
     display: grid;
     grid-template-rows: auto repeat(3,1fr);
-    align-items: start;
     row-gap: 2rem;
 background-color: #f2f2f2;
 border-radius: 33px;
@@ -326,7 +325,7 @@ footer{
     margin-top: 26px;
 }
 
-footer article{
+footer div{
     padding: 23px;
 }
 
@@ -405,6 +404,7 @@ footer{
     background-color: #f2f2f2;
     margin-top: 26px;
     align-content: stretch;
+    padding: 2em;
 }
 }
 

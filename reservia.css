@@ -120,6 +120,7 @@ margin-bottom: -17px;
 }
 article{
     display: block;
+    box-shadow: 0 0 15px rgb(167 161 161)
 }
 
 header{display: block;}
@@ -350,6 +351,7 @@ footer article{
     .main{
         display: flex;
         flex-direction: column;
+        background-color: white;
     }
 
    

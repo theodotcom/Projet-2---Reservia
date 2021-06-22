@@ -20,6 +20,10 @@ h2{
 
 /*Intro */
 
+.yo{
+    display: none;
+}
+
 .navigation {
     display: flex;
     flex-wrap: nowrap;
@@ -73,7 +77,7 @@ a{
     overflow: auto;
 }
 
-.search i{
+.search .fa-map-marker-alt{
     background-color: #F2F2F2;
     padding: 1rem 1.25rem;
     border-radius: 1rem 0 0 1rem;
@@ -422,6 +426,26 @@ footer div{
         margin: 0px;
     }
 
+    h2{
+        font-size: 21px;
+    }
+
+    .search button{
+        display: none;
+    }
+
+.yo{
+    display: flex;
+    border-radius: 10px;
+    background-color:#0065FC;
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+
+.fa-search{
+    color: white;
+}
+
     .navigation {
         display: flex;
         flex-flow: row wrap;
@@ -455,6 +479,9 @@ footer div{
         margin: 7px;
     }
 
+.search input{
+    width: 15rem;
+}
 
     .filters h4 {
         margin: 0px 9rem 1rem 9px;
@@ -510,12 +537,15 @@ grid-row: 7;
 }
 
 footer{ 
+    padding: 2em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     background-color: #f2f2f2;
     margin-top: 26px;
-    margin-left: -10em;
-    padding: 2em;
+    margin-left: 0em;
 }
 
+footer div{
+    padding: 0;
+}
 

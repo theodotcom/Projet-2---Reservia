@@ -548,4 +548,133 @@ footer{
 footer div{
     padding: 0;
 }
+}
+@media all and (max-device-width: 768px)
+{
+    body{
+        margin: 0px;
+    }
 
+    h2{
+        font-size: 21px;
+    }
+
+    .search button{
+        display: none;
+    }
+
+.yo{
+    display: flex;
+    border-radius: 10px;
+    background-color:#0065FC;
+    padding: 1rem 1.25rem;
+    text-align: center;
+}
+
+.fa-search{
+    color: white;
+}
+
+    .navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navigation .navbar {
+        display: flex;
+        width: 100%;
+        order: 1;
+      }
+      .navigation .navbar a {
+        text-align: center;
+        width: 50vw;
+        color: black;
+        transition: border 0.5s ease;
+      }
+      .navigation .navbar a:hover {
+        font-weight: 600;
+        color: var(--clr);
+       
+      }
+      .navigation a#igning {
+        color: var(--clr);
+        font-weight: bold;
+      }
+    
+
+    #banner{
+        margin: 7px;
+    }
+
+.search input{
+    width: 15rem;
+}
+
+    .filters h4 {
+        margin: 0px 9rem 1rem 9px;
+        display: flex;
+        align-items: center;
+    }
+    #host{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+   
+
+    .activities{
+        grid-template-rows: auto repeat(6, 12em);
+    }
+    
+    #port{
+        grid-row: 2;
+        grid-column: 1/-1;
+    }
+
+#pomegues{
+    grid-row: 3;
+    grid-column: 1/-1;
+}
+#calanques{
+    grid-row: 4;
+    grid-column: 1/-1;
+  
+}
+
+#dame{
+    grid-column:1/-1 ;
+    grid-row: 5;
+}
+
+#frioul{
+    grid-column: 1/-1;
+    grid-row: 6;
+
+}
+
+#longchamp{
+grid-column: 1/-1;
+grid-row: 7;
+}
+
+footer{ 
+    padding: 2em;
+    display: flex;
+    flex-flow: column;
+    background-color: #f2f2f2;
+    margin-top: 26px;
+    margin-left: 0em;
+}
+
+footer div{
+    padding: 0;
+}
+}

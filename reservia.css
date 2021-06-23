@@ -499,7 +499,14 @@ footer div{
         background-color: white;
     }
 
-   
+.popular figure{
+    max-width: 43%;
+    min-width: 33%;
+    width: 71%;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+} 
 
     .activities{
         grid-template-rows: auto repeat(6, 12em);

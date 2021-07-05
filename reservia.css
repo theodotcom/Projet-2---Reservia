@@ -311,6 +311,10 @@ row-gap: 25px;
     flex-direction: column;
 }
 
+.flexi{
+    flex: 1;
+}
+
 .popular article{
     display: flex;
     flex-direction: row;
@@ -321,7 +325,7 @@ row-gap: 25px;
 }
 
 .popular h4{
-    margin: 6px 0px -16px 9px;
+    margin: 9px 0px -16px 9px;
 }
 
 .popular p{
@@ -329,7 +333,7 @@ row-gap: 25px;
 }
 
 .popular span{
-    margin: 28px 0px 0px 9px;
+    margin: 28px 0px 9px 9px;
 }
 
 

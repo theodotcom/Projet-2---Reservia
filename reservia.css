@@ -10,7 +10,15 @@ h2{
     font-size: 2em;
 }
 
-.fas{
+h4{
+    font-weight: 700;
+}
+
+.empty{
+    color: #d9d9d9;
+}
+
+.full{
         color: #0065FC;
 }
 
@@ -45,26 +53,21 @@ a{
     text-align: center;
     padding: 1em;
     color: black;
-    border-top: 3px solid var(--alt-clr);
-    transition: border 0.5s ease;
+    border-top: 3px solid #f2f2f2;;
   }
 .navigation .navbar a:hover {
     font-weight: 600;
-    color: var(--clr);
-    border-top: 3px solid var(--clr);
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
   }
 
   
 
 .navigation a#signing {
-    color: var(--clr);
+    color: #0065fc;
     font-weight: bold;
   }
-  :root {
-    --clr: #0065fc;
-    --clr-ltr: #deebff;
-    --alt-clr: #f2f2f2;
-  }
+
 
 .Intro h2{
     margin-bottom: -10px;
@@ -120,7 +123,8 @@ a{
     margin: 0px 10px 19px 0px
 }
 
-.filters div{
+
+.filtersmore{
     display: flex;
     align-items: center;
     margin-right: 2rem;
@@ -132,16 +136,25 @@ a{
     cursor: pointer;
 }
 
-.filters i{
+.filtersicon{
     background-color: #DEEBFF;
     border-radius: 100%;
     height: 3rem;
     width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0065FC;
-    margin-right: 1rem;
+    margin: -2px;
+}
+
+.filtersicon .fas{
+    color: blue;
+}
+
+.filterstext{
+    margin: 0 1rem;
 }
 
 .filters div:hover{
@@ -194,12 +207,22 @@ a{
     padding: 1px;
     background-color: white;
     box-sizing: border-box;
-    height: 100%;
+    height: 92%;
     border-radius: 10px;
 }
 article{
     display: block;
     box-shadow: 0 0 15px rgb(167 161 161)
+}
+
+article figure{
+    padding: 4px;
+}
+
+.textwrap{
+    margin-bottom: 13px;
+    margin-top: -14px;
+    padding: 9px;
 }
 
 header{display: block;}
@@ -235,6 +258,7 @@ main a{
 }
 
 .main p{
+    font-size: 14px;
     margin: 8px 0px 1px 5px;
 }
 .main span{
@@ -278,7 +302,7 @@ row-gap: 25px;
 .popular img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 89%;
     object-fit: cover;
 }
 
@@ -417,6 +441,9 @@ footer div{
     padding: 2em;
 }
 
+footer div p:first-child{
+    font-weight: 700;
+}
 
 /*Media Queries*/
 
@@ -466,11 +493,11 @@ footer div{
       }
       .navigation .navbar a:hover {
         font-weight: 600;
-        color: var(--clr);
+        color: #0065fc;
        
       }
       .navigation a#igning {
-        color: var(--clr);
+        color: #0065fc;
         font-weight: bold;
       }
     
@@ -499,6 +526,15 @@ footer div{
         background-color: white;
     }
 
+.flextext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
 .popular figure{
     max-width: 43%;
     min-width: 33%;
@@ -507,6 +543,14 @@ footer div{
     position: relative;
     min-height: 100%;
 } 
+
+.main article{
+    background-color: white;
+    box-sizing: border-box;
+    height: 92%;
+    border-radius: 10px;
+    padding: 0px;
+}
 
     .activities{
         grid-template-rows: auto repeat(6, 12em);
@@ -582,6 +626,8 @@ footer div{
     color: white;
 }
 
+
+
     .navigation {
         display: flex;
         flex-flow: row wrap;
@@ -602,11 +648,11 @@ footer div{
       }
       .navigation .navbar a:hover {
         font-weight: 600;
-        color: var(--clr);
+        color: #0065fc;
        
       }
       .navigation a#igning {
-        color: var(--clr);
+        color: #0065fc;
         font-weight: bold;
       }
     

@@ -604,7 +604,7 @@ footer div{
     padding: 0;
 }
 }
-@media all and (max-device-width: 768px)
+@media (max-width: 1199.98px)
 {
     body{
         margin: 0px;
@@ -685,8 +685,19 @@ footer div{
         background-color: white;
     }
 
-   
+    .textwrap{
+        margin-bottom: 0px;
+        margin-top: -14px;
+        padding: 9px;
+    }
 
+    .flexi{
+        display: none;
+    }
+
+    .popular span{
+        margin: 28px 0px 19px 9px;
+    }
     .activities{
         grid-template-rows: auto repeat(6, 12em);
     }

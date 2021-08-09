@@ -1,3 +1,5 @@
+/*General */
+
 html {
     font-family: Raleway;
 }
@@ -14,12 +16,14 @@ h4{
     font-weight: 700;
 }
 
+/*Stars of ratings*/
+
 .empty{
     color: #d9d9d9;
 }
 
 .full{
-        color: #0065FC;
+    color: #0065FC;
 }
 
 .fa-chart-line{
@@ -36,7 +40,7 @@ h4{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-  }
+}
 
 a{
     text-decoration: none;
@@ -47,27 +51,24 @@ a{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-  }
+}
 
 .navigation .navbar a {
     text-align: center;
     padding: 1em;
     color: black;
     border-top: 3px solid #f2f2f2;;
-  }
+}
 .navigation .navbar a:hover {
     font-weight: 600;
     color: #0065fc;
     border-top: 3px solid #0065fc;
-  }
-
-  
+}
 
 .navigation a#signing {
     color: #0065fc;
     font-weight: bold;
-  }
-
+}
 
 .Intro h2{
     margin-bottom: -10px;
@@ -225,7 +226,9 @@ article figure{
     padding: 9px;
 }
 
-header{display: block;}
+header{
+    display: block;
+}
 
 main a{
     color: black;
@@ -233,8 +236,8 @@ main a{
 
 .popular img, .main img{
     height: 7em;
-   max-width: 100%;
-   width: 100%;
+    max-width: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -250,7 +253,7 @@ main a{
 
 .main h3 {
     margin: 0px 0px 0px 0px;
-
+    
 }
 
 .main h4{
@@ -262,7 +265,7 @@ main a{
     margin: 8px 0px 1px 5px;
 }
 .main span{
- margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 5px;
 }
 
 figure{
@@ -272,15 +275,18 @@ figure{
 
 /*Aside*/
 
+/*Grid Version is easier with a repeating grid template, 
+which you gave the number of colums you want*/
+
 .popular{
     display: grid;
     grid-template-rows: auto repeat(3,1fr);
     row-gap: 2rem;
-background-color: #f2f2f2;
-border-radius: 33px;
-padding: 24px;
-column-gap: 25px;
-row-gap: 25px;
+    background-color: #f2f2f2;
+    border-radius: 33px;
+    padding: 24px;
+    column-gap: 25px;
+    row-gap: 25px;
 }
 
 .popular header{
@@ -311,6 +317,8 @@ row-gap: 25px;
     flex-direction: column;
 }
 
+/*This space allows me to have a responsive way 
+to be sure that the stars will always be at the bottom*/
 .flexi{
     flex: 1;
 }
@@ -338,6 +346,12 @@ row-gap: 25px;
 
 
 /*Activities*/
+
+/* Grid is a nice way to make the activities exactly the size I want
+This way i can put different sizes of boxes easily, 
+I just have to setup 4 colums in auto, choose the number and size of rows
+Here I want 4 differents sizes because the activities don't have an idantical size
+Then I choose where I want to display each activities*/
 
 .activities{
     display: grid;
@@ -369,8 +383,7 @@ row-gap: 25px;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
+    border-top-right-radius: 8px;   
 }
 
 .activities h3{
@@ -417,12 +430,11 @@ row-gap: 25px;
 }
 
 #longchamp{
-grid-column: 4/5;
-grid-row: 4/7;
-display: flex;
-flex-direction: column;
+    grid-column: 4/5;
+    grid-row: 4/7;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .pic{
     position: relative;
@@ -433,7 +445,7 @@ flex-direction: column;
 
 footer{
     display: flex;
-   flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     background-color: #f2f2f2;
     margin-top: 26px;
@@ -451,69 +463,70 @@ footer div p:first-child{
 
 /*Media Queries*/
 
+/*Phones*/
+
 @media all and (max-device-width: 480px)
 {
     body{
         margin: 0px;
     }
-
+    
     h2{
         font-size: 21px;
     }
-
+    
     .search button{
         display: none;
     }
-
-.yo{
-    display: flex;
-    border-radius: 10px;
-    background-color:#0065FC;
-    padding: 1rem 1.25rem;
-    text-align: center;
-}
-
-.fa-search{
-    color: white;
-}
-
+    
+    .yo{
+        display: flex;
+        border-radius: 10px;
+        background-color:#0065FC;
+        padding: 1rem 1.25rem;
+        text-align: center;
+    }
+    
+    .fa-search{
+        color: white;
+    }
+    
     .navigation {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-      }
-
-      .navigation .navbar {
+    }
+    
+    .navigation .navbar {
         display: flex;
         width: 100%;
         order: 1;
-      }
-      .navigation .navbar a {
+    }
+    .navigation .navbar a {
         text-align: center;
         width: 50vw;
         color: black;
-        transition: border 0.5s ease;
-      }
-      .navigation .navbar a:hover {
+    }
+    .navigation .navbar a:hover {
         font-weight: 600;
         color: #0065fc;
-       
-      }
-      .navigation a#igning {
+        
+    }
+    .navigation a#signing {
         color: #0065fc;
         font-weight: bold;
-      }
+    }
     
-
+    
     #banner{
         margin: 7px;
     }
-
-.search input{
-    width: 15rem;
-}
-
+    
+    .search input{
+        width: 15rem;
+    }
+    
     .filters h4 {
         margin: 0px 9rem 1rem 9px;
         display: flex;
@@ -523,39 +536,39 @@ footer div p:first-child{
         display: flex;
         flex-direction: column-reverse;
     }
-
+    
     .main{
         display: flex;
         flex-direction: column;
         background-color: white;
     }
-
-.flextext{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-}
-
-.popular figure{
-    max-width: 43%;
-    min-width: 33%;
-    width: 71%;
-    margin: 0;
-    position: relative;
-    min-height: 100%;
-} 
-
-.main article{
-    background-color: white;
-    box-sizing: border-box;
-    height: 92%;
-    border-radius: 10px;
-    padding: 0px;
-}
-
+    
+    .flextext{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .popular figure{
+        max-width: 43%;
+        min-width: 33%;
+        width: 71%;
+        margin: 0;
+        position: relative;
+        min-height: 100%;
+    } 
+    
+    .main article{
+        background-color: white;
+        box-sizing: border-box;
+        height: 92%;
+        border-radius: 10px;
+        padding: 0px;
+    }
+    
     .activities{
         grid-template-rows: auto repeat(6, 12em);
     }
@@ -564,111 +577,110 @@ footer div p:first-child{
         grid-row: 2;
         grid-column: 1/-1;
     }
-
-#pomegues{
-    grid-row: 3;
-    grid-column: 1/-1;
+    
+    #pomegues{
+        grid-row: 3;
+        grid-column: 1/-1;
+    }
+    #calanques{
+        grid-row: 4;
+        grid-column: 1/-1;
+        
+    }
+    
+    #dame{
+        grid-column:1/-1 ;
+        grid-row: 5;
+    }
+    
+    #frioul{
+        grid-column: 1/-1;
+        grid-row: 6;
+        
+    }
+    
+    #longchamp{
+        grid-column: 1/-1;
+        grid-row: 7;
+    }
+    
+    footer{ 
+        padding: 2em;
+        display: flex;
+        flex-flow: column;
+        background-color: #f2f2f2;
+        margin-top: 26px;
+        margin-left: 0em;
+    }
+    
+    footer div{
+        padding: 0;
+    }
 }
-#calanques{
-    grid-row: 4;
-    grid-column: 1/-1;
-  
-}
-
-#dame{
-    grid-column:1/-1 ;
-    grid-row: 5;
-}
-
-#frioul{
-    grid-column: 1/-1;
-    grid-row: 6;
-
-}
-
-#longchamp{
-grid-column: 1/-1;
-grid-row: 7;
-}
-
-footer{ 
-    padding: 2em;
-    display: flex;
-    flex-flow: column;
-    background-color: #f2f2f2;
-    margin-top: 26px;
-    margin-left: 0em;
-}
-
-footer div{
-    padding: 0;
-}
-}
+/*Tablets*/
 @media (max-width: 1199.98px)
 {
     body{
         margin: 0px;
     }
-
+    
     h2{
         font-size: 21px;
     }
-
+    
     .search button{
         display: none;
     }
-
-.yo{
-    display: flex;
-    border-radius: 10px;
-    background-color:#0065FC;
-    padding: 1rem 1.25rem;
-    text-align: center;
-}
-
-.fa-search{
-    color: white;
-}
-
-
-
+    
+    .yo{
+        display: flex;
+        border-radius: 10px;
+        background-color:#0065FC;
+        padding: 1rem 1.25rem;
+        text-align: center;
+    }
+    
+    .fa-search{
+        color: white;
+    }
+    
     .navigation {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-      }
-
-      .navigation .navbar {
+    }
+    
+    .navigation .navbar {
         display: flex;
         width: 100%;
         order: 1;
-      }
-      .navigation .navbar a {
+    }
+    .navigation .navbar a {
         text-align: center;
         width: 50vw;
         color: black;
         transition: border 0.5s ease;
-      }
-      .navigation .navbar a:hover {
+    }
+    .navigation .navbar a:hover {
         font-weight: 600;
         color: #0065fc;
-       
-      }
-      .navigation a#igning {
+        
+    }
+    .navigation a#igning {
         color: #0065fc;
         font-weight: bold;
-      }
+    }
     
-
+    
     #banner{
         margin: 7px;
     }
-
-.search input{
-    width: 15rem;
-}
-
+    
+    .search input{
+        width: 15rem;
+    }
+    
     .filters h4 {
         margin: 0px 9rem 1rem 9px;
         display: flex;
@@ -678,23 +690,23 @@ footer div{
         display: flex;
         flex-direction: column-reverse;
     }
-
+    
     .main{
         display: flex;
         flex-direction: column;
         background-color: white;
     }
-
+    
     .textwrap{
         margin-bottom: 0px;
         margin-top: -14px;
         padding: 9px;
     }
-
+    
     .flexi{
         display: none;
     }
-
+    
     .popular span{
         margin: 28px 0px 19px 9px;
     }
@@ -706,44 +718,44 @@ footer div{
         grid-row: 2;
         grid-column: 1/-1;
     }
-
-#pomegues{
-    grid-row: 3;
-    grid-column: 1/-1;
-}
-#calanques{
-    grid-row: 4;
-    grid-column: 1/-1;
-  
-}
-
-#dame{
-    grid-column:1/-1 ;
-    grid-row: 5;
-}
-
-#frioul{
-    grid-column: 1/-1;
-    grid-row: 6;
-
-}
-
-#longchamp{
-grid-column: 1/-1;
-grid-row: 7;
-}
-
-footer{ 
-    padding: 2em;
-    display: flex;
-    flex-flow: column;
-    background-color: #f2f2f2;
-    margin-top: 26px;
-    margin-left: 0em;
-}
-
-footer div{
-    padding: 0;
-}
-
+    
+    #pomegues{
+        grid-row: 3;
+        grid-column: 1/-1;
+    }
+    #calanques{
+        grid-row: 4;
+        grid-column: 1/-1;
+        
+    }
+    
+    #dame{
+        grid-column:1/-1 ;
+        grid-row: 5;
+    }
+    
+    #frioul{
+        grid-column: 1/-1;
+        grid-row: 6;
+        
+    }
+    
+    #longchamp{
+        grid-column: 1/-1;
+        grid-row: 7;
+    }
+    
+    footer{ 
+        padding: 2em;
+        display: flex;
+        flex-flow: column;
+        background-color: #f2f2f2;
+        margin-top: 26px;
+        margin-left: 0em;
+    }
+    
+    footer div{
+        padding: 0;
+    }
+    
 }

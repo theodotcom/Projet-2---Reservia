@@ -70,11 +70,11 @@ a{
     font-weight: bold;
 }
 
-.Intro h2{
+.intro h2{
     margin-bottom: -10px;
 }
 
-.Intro p{
+.intro p{
     font-weight: 300;
 }
 
@@ -530,7 +530,6 @@ footer div p:first-child{
         font-weight: bold;
     }
     
-    
     #banner{
         margin: 7px;
     }
@@ -598,10 +597,10 @@ footer div p:first-child{
         grid-row: 3;
         grid-column: 1/-1;
     }
+
     #calanques{
         grid-row: 4;
         grid-column: 1/-1;
-        
     }
     
     #dame{
@@ -611,8 +610,7 @@ footer div p:first-child{
     
     #frioul{
         grid-column: 1/-1;
-        grid-row: 6;
-        
+        grid-row: 6; 
     }
     
     #longchamp{

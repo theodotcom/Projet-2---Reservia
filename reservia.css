@@ -16,8 +16,6 @@ h4{
     font-weight: 700;
 }
 
-/*Stars of ratings*/
-
 .empty{
     color: #d9d9d9;
 }
@@ -29,6 +27,8 @@ h4{
 .fa-chart-line{
     color: black;
 }
+
+
 
 /*Intro */
 
@@ -72,6 +72,10 @@ a{
 
 .Intro h2{
     margin-bottom: -10px;
+}
+
+.Intro p{
+    font-weight: 300;
 }
 
 .search{
@@ -180,6 +184,10 @@ a{
     justify-content: center;
     margin-right: 1rem;
     color: #0065FC;
+}
+
+.info p{
+    font-weight: 300;
 }
 
 .host{
@@ -315,6 +323,10 @@ which you gave the number of colums you want*/
 .flextext{
     display: flex;
     flex-direction: column;
+}
+
+.viewmore{
+    font-weight: bold;
 }
 
 /*This space allows me to have a responsive way 
@@ -465,7 +477,7 @@ footer div p:first-child{
 
 /*Phones*/
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     body{
         margin: 0px;
@@ -521,6 +533,10 @@ footer div p:first-child{
     
     #banner{
         margin: 7px;
+    }
+
+    #banner p{
+        font-weight: 200;
     }
     
     .search input{
